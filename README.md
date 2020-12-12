@@ -12,10 +12,13 @@ Turn your json into anonymous C# objects.
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
+
 # Usage
+
+```sh-session
+$ npx jsonanon <path to json file>
+...
+```
 <!-- usage -->
 ```sh-session
 $ npm install -g jsonanon
@@ -29,20 +32,12 @@ USAGE
 ...
 ```
 <!-- usagestop -->
-```sh-session
-$ npm install -g jsonanon
-$ jsonanon COMMAND
-running command...
-$ jsonanon (-v|--version|version)
-jsonanon/0.1.0 win32-x64 node-v12.16.2
-$ jsonanon --help [COMMAND]
-USAGE
-  $ jsonanon COMMAND
-...
-```
-<!-- usagestop -->
 # Commands
 <!-- commands -->
+
+<!-- commandsstop -->
+
+<!-- commandsstop -->
 
 <!-- commandsstop -->
 
