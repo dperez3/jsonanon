@@ -1,7 +1,7 @@
 import {Command, flags} from '@oclif/command'
 import * as path from 'path'
 import {convertJsonFile} from './converter'
-import { cli } from 'cli-ux'
+import {cli} from 'cli-ux'
 
 class Jsonanon extends Command {
   static description = 'Turn your json into anonymous C# objects.';
