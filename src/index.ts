@@ -1,5 +1,4 @@
 import {Command, flags} from '@oclif/command'
-import cli from 'cli-ux'
 import * as path from 'path'
 import {convertJsonFile} from './converter'
 
@@ -30,9 +29,9 @@ class Jsonanon extends Command {
       const {args} = this.parse(Jsonanon)
       const file = args.file
 
-      cli.action.start(`converting "${file}"`)
+      console.log(`converting "${file}"`)
       const jsonanon = await convertJsonFile(file)
-      cli.action.stop('done.')
+      console.log('done.')
 
       this.log(jsonanon)
     } catch (error) {
