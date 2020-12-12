@@ -1,7 +1,7 @@
 {
   "name": "jsonanon",
   "description": "Turn your json into anonymous C# objects.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": " @dperez3",
   "bin": {
     "jsonanon": "./bin/run"
