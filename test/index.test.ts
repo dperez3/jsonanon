@@ -6,8 +6,8 @@ describe('jsonanon', () => {
   test
   .stdout()
   .do(() => cmd.run(['test/testJson.json']))
-  .it('prints the file name', ctx => {
-    expect(ctx.stdout).to.contain('testJson.json')
+  .it('prints something', ctx => {
+    expect(ctx.stdout).to.contain('new')
   })
 
   // test
