@@ -1,6 +1,7 @@
 import {Command, flags} from '@oclif/command'
 import * as path from 'path'
 import {convertJsonFile} from './converter'
+import { cli } from 'cli-ux'
 
 class Jsonanon extends Command {
   static description = 'Turn your json into anonymous C# objects.';
@@ -29,9 +30,9 @@ class Jsonanon extends Command {
       const {args} = this.parse(Jsonanon)
       const file = args.file
 
-      console.log(`converting "${file}"`)
+      cli.action.start(`converting "${file}"`)
       const jsonanon = await convertJsonFile(file)
-      console.log('done.')
+      cli.action.stop('done.')
 
       this.log(jsonanon)
     } catch (error) {
