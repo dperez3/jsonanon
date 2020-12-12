@@ -22,9 +22,10 @@ function convertJsonObjectToCSharpObject(json: object): string {
   const cSharpProperties = Object.entries(json)
   .map(x => {
     // const capitalizedName = x[0].charAt(0).toUpperCase() + x[0].slice(1);
+    // eslint-disable-next-line no-warning-comments
     // TODO: Allow capitalization flag
     const name = x[0]
-    // eslint-disable-next-line @typescript-eslint/no-use-before-define
+    // eslint-disable-next-line no-abusive-eslint-disable.md, @typescript-eslint/no-use-before-define
     return `${name} = ${convertJsonValueToCSharpValue(x[1])}`
   })
   .join(',\n') // remove last ',\n'

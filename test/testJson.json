@@ -1,0 +1,9 @@
+{
+    "aNumber": 1,
+    "aString": "string val",
+    "aStringDate": "6 Mar 17 21:22 UT",
+    "anObject": {
+      "subProp": "subProp Value"
+    },
+    "anArray": ["todo"]
+  }
