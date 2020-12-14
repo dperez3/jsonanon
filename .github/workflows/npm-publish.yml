@@ -5,7 +5,9 @@ name: Publish Package to NPM
 
 on:
   push:
-    branches: master
+    tags: '*'
+    #branches: master
+    
   #release:
     #types: [created]
   workflow_dispatch:
