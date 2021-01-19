@@ -48,11 +48,14 @@
   ],
   "homepage": "https://github.com/dperez3/jsonanon",
   "keywords": [
+    "cli",
     "json",
     "c#",
+    "csharp",
     "anonymous",
     "objects",
-    "converter",
+    "convert",
+    "npx",
     "oclif"
   ],
   "license": "MIT",
